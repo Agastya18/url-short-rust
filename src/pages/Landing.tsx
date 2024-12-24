@@ -2,7 +2,7 @@ import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {useState} from "react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -12,7 +12,7 @@ import {
 
 const LandingPage = () => {
   const [longUrl, setLongUrl] = useState("");
-  const navigate = useNavigate();
+ // const navigate = useNavigate();
 
   const handleShorten = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ const LandingPage = () => {
         });
         console.log(response);
         return
-        const shortUrl = response.data.shortUrl;
+       
         // navigate(`/auth?short
         
       } catch (error) {
